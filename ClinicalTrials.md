@@ -390,6 +390,8 @@ This task view focuses on packages relevant to clinical trials. For a more compr
 
 ### Reporting
 
+This task view focuses on packages relevant to clinical trials in general. For a more comprehensive collection of packages related to clinical reporting pipelines used in the pharmaceutical industry, please refer to the [pharmaverse](https://pharmaverse.org/).
+
 - `r pkg("consort")` creates CONSORT diagrams for randomized clinical trials using standardized disposition data, with optional custom text labels for nodes.
 
 - `r pkg("gridify")` is a simple, flexible tool for creating enriched figures and tables by adding surrounding text using predefined or custom layouts. Supports any input convertible to a `grob` (e.g., `ggplot`, `gt`, `flextable`) and is built on R's `grid` graphics system. For details, see Murrell (2018) `r doi("10.1201/9780429422768")`.
