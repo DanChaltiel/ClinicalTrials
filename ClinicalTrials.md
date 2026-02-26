@@ -91,6 +91,8 @@ Contributions are always welcome and encouraged. You can contribute by emailing 
 
 - `r pkg("SAME")` allows design of a Bayesian seamless multi-arm biomarker-enriched phase II/III design with the survival endpoint with allowing sample size re-estimation, based on Wason et al. (2015) `r doi("10.1038/bjc.2015.278")`, Yin et al. (2018) `r doi("10.1007/s12561-017-9199-7")` and Yuan et al. (2016) `r doi("10.1002/sim.6971")`.
 
+- `r pkg("TrialSimulator")` provides functions for simulating clinical trials under a range of adaptive designs, including seamless designs with dose selection, interim analyses, multiple endpoints, response‑adaptive designs, and dose‑ranging studies.
+
 
 #### *Bioequivalence*
 
@@ -263,7 +265,9 @@ Contributions are always welcome and encouraged. You can contribute by emailing 
 
 - `r pkg("rpact", priority = "core")` provides simulation tools for means, rates, survival data, and count data, enabling the evaluation of adaptive sample size or event number recalculations based on conditional power, as well as the assessment of treatment selection strategies in multi-arm trials.
 
-- `r pkg("simglm")` Simulates regression models, including both simple regression and generalized linear mixed models with up to three level of nesting. Power simulations that are flexible allowing the specification of missing data, unbalanced designs, and different random error distributions are built into the package.
+- `r pkg("simglm")` simulates regression models, including both simple regression and generalized linear mixed models with up to three level of nesting. Power simulations that are flexible allowing the specification of missing data, unbalanced designs, and different random error distributions are built into the package.
+
+- `r pkg("TrialSimulator")` provides functions for patient‑level simulation of randomized clinical trials based on a modular, declarative architecture, enabling users to define arms, endpoints, milestone triggers, and actions for both fixed and adaptive designs.
 
 - `r pkg("UnifiedDoseFinding")` provides the setup and calculations needed to run a dose-finding trial with non-binary endpoints and performs simulations to assess design's operating characteristics under various scenarios.  Three dose finding designs are included in this package: unified phase I design based on Ivanova et al. (2009) `r doi("10.1111/j.1541-0420.2008.01045.x")`, Quasi-CRM/Robust-Quasi-CRM based on Yuan et al. (2007) `r doi("10.1111/j.1541-0420.2006.00666.x")` and Pan et al. (2014) `r doi("10.1371/journal.pone.0098147")`, and generalized BOIN design by Mu et al. (2018) `r doi("10.1111/rssc.12263")`.
 
