@@ -57,6 +57,8 @@ Contributions are always welcome and encouraged. You can contribute by emailing 
     
 - `r pkg("adestr")` provides methods to evaluate the performance characteristics of various point and interval estimators for optimal adaptive two-stage designs. Specifically, this package is written to work with trial designs created by the `adoptr` package based on Kunzmann et al. (2021) `r doi("10.18637/jss.v098.i09")` and Pilz et al. (2021) `r doi("10.1002/sim.8953")`.
 
+- `r pkg("adoptr")` optimizes one or two-arm, two-stage designs for clinical trials with respect to several implemented objective criteria or custom objectives. Optimization under uncertainty and conditional (given stage-one outcome) constraints are supported. See Pilz et al. (2019) `r doi("10.1002/sim.8291")` and Kunzmann et al. (2021) `r doi("10.18637/jss.v098.i09")` for details.
+
 - `r pkg("adpss")` provides the functions for planning and conducting a clinical trial with adaptive sample size determination. Maximal statistical efficiency will be exploited even when dramatic or multiple adaptations are made. 
 
 - `r pkg("asd", priority = "core")` runs simulations for adaptive seamless designs with and without early outcomes for treatment selection and subpopulation type designs. It allows sample size modification in subpopulation selection.
@@ -68,6 +70,8 @@ Contributions are always welcome and encouraged. You can contribute by emailing 
 - `r pkg("cats")` simulates a cohort platform trial design whereby every cohort consists of two arms (control and experimental treatment). Endpoints are co-primary binary endpoints and decisions are made using either Bayesian or frequentist decision rules; and realistic trial trajectories are simulated with the operating characteristics of the designs calculated.
 
 - `r pkg("CohortPlat")` is a collection of functions dedicated to simulating staggered entry platform trials whereby the treatment under investigation is a combination of two active compounds. A more detailed description of the design can be found in Meyer et al. `r doi("10.1002/pst.2194")` and a manual in Meyer et al. `r doi("10.48550/arXiv.2202.02182")`.
+
+- `r pkg("drugdevelopR")` plans optimal sample size allocation and go/no-go decision rules for phase II/III drug development programs with time-to-event, binary or normally distributed endpoints when assuming fixed treatment effects or a prior distribution for the treatment effect, using methods from Kirchner et al. (2016) `r doi("10.1002/sim.6624")` and Preussler (2020) `r doi("10.1186/s12874-020-01093-w")`.
 
 - `r pkg("esDesign")` is developed to implement the adaptive enrichment designs with sample size re-estimation presented in Lin et al. (2021) `r doi("10.1016/j.cct.2020.106216")`. In details, three-proposed trial designs are provided, including the AED1-SSR (or ES1-SSR), AED2-SSR (or ES2-SSR), AED3-SSR (or ES3-SSR); additionally, several widely used adaptive designs, such as the Marker Sequential Test (MaST) design proposed Freidlin et al. (2014) `r doi("10.1177/1740774513503739")`, the adaptive enrichment designs without early stopping (AED or ES), the sample size re-estimation procedure (SSR) based on the conditional power proposed by Proschan and Hunsberger (1995) `r doi("10.2307/2533262")`.
 
@@ -208,7 +212,11 @@ Contributions are always welcome and encouraged. You can contribute by emailing 
 
 #### *Sample Size and Power Calculations*
 
+- `r pkg("baskexact")` analytically calculates the operating characteristics of single-stage and two-stage basket trials with equal sample sizes using the power prior design by Baumann et al. (2024) `r doi("10.48550/arXiv.2309.06988")` and the design by Fujikawa et al. (2020) `r doi("10.1002/bimj.201800404")`.
+
 - `r pkg("BayesCTDesign")` A set of functions to help clinical trial researchers calculate power and sample size for two-arm Bayesian randomized clinical trials that do or do not incorporate historical control data.  Outcomes considered are Gaussian, Poisson, Bernoulli, Lognormal, Weibull, and Piecewise Exponential. The methods are described in Eggleston et al. (2021) `r doi("10.18637/jss.v100.i21")`. 
+
+- `r pkg("blindrecalc")` provides computation of key characteristics and plots for blinded sample size recalculation. Continuous as well as binary endpoints are supported in superiority and non-inferiority trials. See Baumann et al. (2022) `r doi("10.32614/RJ-2022-001")` for a detailed description. 
     
 - `r pkg("clinfun", priority = "core")` provides functions to determine sample sizes, effect sizes, and power based on Fisher’s exact tests, as well as functions to calculate the power of rank tests for animal studies. 
     
@@ -247,7 +255,11 @@ Contributions are always welcome and encouraged. You can contribute by emailing 
 
 - `r pkg("asd", priority = "core")` provides functions to simulate adaptive seamless designs that either (i) compare multiple experimental treatments against a single control group, or (ii) evaluate a single experimental treatment versus a control with co-primary analyses in both a predefined subgroup and the full population.
 
+- `r pkg("basksim")` provides a unified syntax for the simulation-based comparison of different single-stage basket trial designs with a binary endpoint and equal sample sizes in all baskets. Methods include the designs by Baumann et al. (2025) `r doi("10.1080/19466315.2024.2402275")`, Schmitt and Baumann (2025) `r doi("10.1080/19466315.2025.2486231")`, Fujikawa et al. (2020) `r doi("10.1002/bimj.201800404")`, Berry et al. (2020) `r doi("10.1177/1740774513497539")`, and Neuenschwander et al. (2016) `r doi("10.1002/pst.1730")`. For the latter two designs, the functions are mostly wrappers for functions provided by the package `bhmbasket`.
+
 - `r pkg("bcrm", priority = "core")` allows users to Simulate multiple trial scenarios to assess operating characteristics and evaluate different Bayesian CRM designs.
+
+- `r pkg("bhmbasket")` provides functions to evaluate basket trial designs with binary endpoints using simulation and Bayesian hierarchical models to assess Go/No-go decisions. Supports flexible trial configurations and implements models from Berry et al. (2013) `r doi("10.1177/1740774513497539")` and Neuenschwander et al. (2016) `r doi("10.1002/pst.1730")`. 
     
 - `r pkg("cats")` Given trial-specific design parameters, this package performs multiple trial simulations and exports the results to an Excel file for further analysis.
     
