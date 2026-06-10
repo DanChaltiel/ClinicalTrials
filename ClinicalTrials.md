@@ -3,7 +3,7 @@ name: ClinicalTrials
 topic: Clinical Trial Design, Monitoring, Analysis and Reporting
 maintainer: Ya Wang, Thomas Jaki, Laura Pascasio Harris, Orla Doyle, Elias Laurin Meyer, Wilmar Igl
 email: ya.wang10@gilead.com
-version: 2026-02-11
+version: 2026-06-10
 source: https://github.com/cran-task-views/ClinicalTrials/
 ---
 
@@ -57,6 +57,8 @@ Contributions are always welcome and encouraged. You can contribute by emailing 
     
 - `r pkg("adestr")` provides methods to evaluate the performance characteristics of various point and interval estimators for optimal adaptive two-stage designs. Specifically, this package is written to work with trial designs created by the `adoptr` package based on Kunzmann et al. (2021) `r doi("10.18637/jss.v098.i09")` and Pilz et al. (2021) `r doi("10.1002/sim.8953")`.
 
+- `r pkg("adoptr")` optimizes one or two-arm, two-stage designs for clinical trials with respect to several implemented objective criteria or custom objectives. Optimization under uncertainty and conditional (given stage-one outcome) constraints are supported. See Pilz et al. (2019) `r doi("10.1002/sim.8291")` and Kunzmann et al. (2021) `r doi("10.18637/jss.v098.i09")` for details.
+
 - `r pkg("adpss")` provides the functions for planning and conducting a clinical trial with adaptive sample size determination. Maximal statistical efficiency will be exploited even when dramatic or multiple adaptations are made. 
 
 - `r pkg("asd", priority = "core")` runs simulations for adaptive seamless designs with and without early outcomes for treatment selection and subpopulation type designs. It allows sample size modification in subpopulation selection.
@@ -68,6 +70,8 @@ Contributions are always welcome and encouraged. You can contribute by emailing 
 - `r pkg("cats")` simulates a cohort platform trial design whereby every cohort consists of two arms (control and experimental treatment). Endpoints are co-primary binary endpoints and decisions are made using either Bayesian or frequentist decision rules; and realistic trial trajectories are simulated with the operating characteristics of the designs calculated.
 
 - `r pkg("CohortPlat")` is a collection of functions dedicated to simulating staggered entry platform trials whereby the treatment under investigation is a combination of two active compounds. A more detailed description of the design can be found in Meyer et al. `r doi("10.1002/pst.2194")` and a manual in Meyer et al. `r doi("10.48550/arXiv.2202.02182")`.
+
+- `r pkg("drugdevelopR")` plans optimal sample size allocation and go/no-go decision rules for phase II/III drug development programs with time-to-event, binary or normally distributed endpoints when assuming fixed treatment effects or a prior distribution for the treatment effect, using methods from Kirchner et al. (2016) `r doi("10.1002/sim.6624")` and Preussler (2020) `r doi("10.1186/s12874-020-01093-w")`.
 
 - `r pkg("esDesign")` is developed to implement the adaptive enrichment designs with sample size re-estimation presented in Lin et al. (2021) `r doi("10.1016/j.cct.2020.106216")`. In details, three-proposed trial designs are provided, including the AED1-SSR (or ES1-SSR), AED2-SSR (or ES2-SSR), AED3-SSR (or ES3-SSR); additionally, several widely used adaptive designs, such as the Marker Sequential Test (MaST) design proposed Freidlin et al. (2014) `r doi("10.1177/1740774513503739")`, the adaptive enrichment designs without early stopping (AED or ES), the sample size re-estimation procedure (SSR) based on the conditional power proposed by Proschan and Hunsberger (1995) `r doi("10.2307/2533262")`.
 
@@ -90,6 +94,8 @@ Contributions are always welcome and encouraged. You can contribute by emailing 
 - `r pkg("rpact", priority = "core")` Design and analysis of confirmatory adaptive clinical trials with continuous, binary, and survival endpoints according to the methods described in the monograph by Wassmer and Brannath (2016) `r doi("10.1007/978-3-319-32562-0")`. This includes classical group sequential as well as multi-stage adaptive hypotheses tests that are based on the combination testing principle.
 
 - `r pkg("SAME")` allows design of a Bayesian seamless multi-arm biomarker-enriched phase II/III design with the survival endpoint with allowing sample size re-estimation, based on Wason et al. (2015) `r doi("10.1038/bjc.2015.278")`, Yin et al. (2018) `r doi("10.1007/s12561-017-9199-7")` and Yuan et al. (2016) `r doi("10.1002/sim.6971")`.
+
+- `r pkg("TrialSimulator")` provides functions for simulating clinical trials under a range of adaptive designs, including seamless designs with dose selection, interim analyses, multiple endpoints, response‑adaptive designs, and dose‑ranging studies.
 
 
 #### *Bioequivalence*
@@ -206,7 +212,11 @@ Contributions are always welcome and encouraged. You can contribute by emailing 
 
 #### *Sample Size and Power Calculations*
 
+- `r pkg("baskexact")` analytically calculates the operating characteristics of single-stage and two-stage basket trials with equal sample sizes using the power prior design by Baumann et al. (2024) `r doi("10.48550/arXiv.2309.06988")` and the design by Fujikawa et al. (2020) `r doi("10.1002/bimj.201800404")`.
+
 - `r pkg("BayesCTDesign")` A set of functions to help clinical trial researchers calculate power and sample size for two-arm Bayesian randomized clinical trials that do or do not incorporate historical control data.  Outcomes considered are Gaussian, Poisson, Bernoulli, Lognormal, Weibull, and Piecewise Exponential. The methods are described in Eggleston et al. (2021) `r doi("10.18637/jss.v100.i21")`. 
+
+- `r pkg("blindrecalc")` provides computation of key characteristics and plots for blinded sample size recalculation. Continuous as well as binary endpoints are supported in superiority and non-inferiority trials. See Baumann et al. (2022) `r doi("10.32614/RJ-2022-001")` for a detailed description. 
     
 - `r pkg("clinfun", priority = "core")` provides functions to determine sample sizes, effect sizes, and power based on Fisher’s exact tests, as well as functions to calculate the power of rank tests for animal studies. 
     
@@ -221,8 +231,6 @@ Contributions are always welcome and encouraged. You can contribute by emailing 
 - `r pkg("pmvalsampsize")` computes the minimum sample size required for the external validation of an existing multivariable prediction model using the criteria proposed by Archer (2020) `r doi("10.1002/sim.8766")` and Riley (2021) `r doi("10.1002/sim.9025")`.
     
 - `r pkg("PowerTOST", priority = "core")` contains functions to calculate power and sample size for various study designs used in bioequivalence studies. Power and sample size can be obtained based on different methods, amongst them prominently the TOST procedure (two one-sided t-tests).
-    
-- `r pkg("PowerUpR")` Includes tools to calculate statistical power, minimum detectable effect size (MDES), MDES difference (MDESD), and minimum required sample size for various multilevel randomized experiments with continuous outcomes. Some of the functions can assist with planning two- and three-level cluster-randomized trials (CRTs) sensitive to multilevel moderation and mediation (2-1-1, 2-2-1, and 3-2-1).
     
 - `r pkg("presize")` Bland (2009) `r doi("10.1136/bmj.b3985")` recommended to base study sizes on the width of the confidence interval rather the power of a statistical test. The goal of 'presize' is to provide functions for such precision based sample size calculations. For a given sample size, the functions will return the precision (width of the confidence interval), and vice versa.
 
@@ -245,7 +253,11 @@ Contributions are always welcome and encouraged. You can contribute by emailing 
 
 - `r pkg("asd", priority = "core")` provides functions to simulate adaptive seamless designs that either (i) compare multiple experimental treatments against a single control group, or (ii) evaluate a single experimental treatment versus a control with co-primary analyses in both a predefined subgroup and the full population.
 
+- `r pkg("basksim")` provides a unified syntax for the simulation-based comparison of different single-stage basket trial designs with a binary endpoint and equal sample sizes in all baskets. Methods include the designs by Baumann et al. (2025) `r doi("10.1080/19466315.2024.2402275")`, Schmitt and Baumann (2025) `r doi("10.1080/19466315.2025.2486231")`, Fujikawa et al. (2020) `r doi("10.1002/bimj.201800404")`, Berry et al. (2020) `r doi("10.1177/1740774513497539")`, and Neuenschwander et al. (2016) `r doi("10.1002/pst.1730")`. For the latter two designs, the functions are mostly wrappers for functions provided by the package `bhmbasket`.
+
 - `r pkg("bcrm", priority = "core")` allows users to Simulate multiple trial scenarios to assess operating characteristics and evaluate different Bayesian CRM designs.
+
+- `r pkg("bhmbasket")` provides functions to evaluate basket trial designs with binary endpoints using simulation and Bayesian hierarchical models to assess Go/No-go decisions. Supports flexible trial configurations and implements models from Berry et al. (2013) `r doi("10.1177/1740774513497539")` and Neuenschwander et al. (2016) `r doi("10.1002/pst.1730")`. 
     
 - `r pkg("cats")` Given trial-specific design parameters, this package performs multiple trial simulations and exports the results to an Excel file for further analysis.
     
@@ -263,7 +275,9 @@ Contributions are always welcome and encouraged. You can contribute by emailing 
 
 - `r pkg("rpact", priority = "core")` provides simulation tools for means, rates, survival data, and count data, enabling the evaluation of adaptive sample size or event number recalculations based on conditional power, as well as the assessment of treatment selection strategies in multi-arm trials.
 
-- `r pkg("simglm")` Simulates regression models, including both simple regression and generalized linear mixed models with up to three level of nesting. Power simulations that are flexible allowing the specification of missing data, unbalanced designs, and different random error distributions are built into the package.
+- `r pkg("simglm")` simulates regression models, including both simple regression and generalized linear mixed models with up to three level of nesting. Power simulations that are flexible allowing the specification of missing data, unbalanced designs, and different random error distributions are built into the package.
+
+- `r pkg("TrialSimulator")` provides functions for patient‑level simulation of randomized clinical trials based on a modular, declarative architecture, enabling users to define arms, endpoints, milestone triggers, and actions for both fixed and adaptive designs.
 
 - `r pkg("UnifiedDoseFinding")` provides the setup and calculations needed to run a dose-finding trial with non-binary endpoints and performs simulations to assess design's operating characteristics under various scenarios.  Three dose finding designs are included in this package: unified phase I design based on Ivanova et al. (2009) `r doi("10.1111/j.1541-0420.2008.01045.x")`, Quasi-CRM/Robust-Quasi-CRM based on Yuan et al. (2007) `r doi("10.1111/j.1541-0420.2006.00666.x")` and Pan et al. (2014) `r doi("10.1371/journal.pone.0098147")`, and generalized BOIN design by Mu et al. (2018) `r doi("10.1111/rssc.12263")`.
 
@@ -359,8 +373,6 @@ This task view focuses on packages relevant to clinical trials. For a more compr
   
 - `r pkg("MatchIt")` is an R package that selects matched samples of the original treated and control groups with similar covariate distributions.  It can be used to match exactly on covariates, to match on propensity scores, or perform a variety of other matching procedures. The package also implements a series of recommendations offered in Ho et al. (2007) `r doi("10.1093/pan/mpl013")`.
 
-- `r pkg("nppbib")` implements a nonparametric statistical test for rank or score data from partially-balanced incomplete block-design experiments.
-    
 - `r pkg("speff2trial", priority = "core")` performs estimation and testing of the treatment effect in a 2-group randomized clinical trial with a quantitative or dichotomous endpoint.
     
 - `r pkg("ThreeGroups")` This package implements the Maximum Likelihood estimator for three-group designs proposed by Gerber et al. (2010) `r doi("10.1093/pan/mpq008")`.
@@ -385,6 +397,8 @@ This task view focuses on packages relevant to clinical trials. For a more compr
 - `r pkg("tLagInterim")` supports interim monitoring in clinical trials with time-lagged outcomes, It implements inverse and augmented inverse probability weighted estimators for common treatment effect parameters at an interim analysis with time-lagged outcome that may not be available for all enrolled subjects. See Tsiatis and Davidian (2022) `r doi("10.1002/sim.9580")` for details.
 
 ### Reporting
+
+This task view focuses on packages relevant to clinical trials in general. For a more comprehensive collection of packages related to clinical reporting pipelines used in the pharmaceutical industry, please refer to the [pharmaverse](https://pharmaverse.org/).
 
 - `r pkg("consort")` creates CONSORT diagrams for randomized clinical trials using standardized disposition data, with optional custom text labels for nodes.
 
