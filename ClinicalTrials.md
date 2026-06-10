@@ -232,8 +232,6 @@ Contributions are always welcome and encouraged. You can contribute by emailing 
     
 - `r pkg("PowerTOST", priority = "core")` contains functions to calculate power and sample size for various study designs used in bioequivalence studies. Power and sample size can be obtained based on different methods, amongst them prominently the TOST procedure (two one-sided t-tests).
     
-- `r pkg("PowerUpR")` Includes tools to calculate statistical power, minimum detectable effect size (MDES), MDES difference (MDESD), and minimum required sample size for various multilevel randomized experiments with continuous outcomes. Some of the functions can assist with planning two- and three-level cluster-randomized trials (CRTs) sensitive to multilevel moderation and mediation (2-1-1, 2-2-1, and 3-2-1).
-    
 - `r pkg("presize")` Bland (2009) `r doi("10.1136/bmj.b3985")` recommended to base study sizes on the width of the confidence interval rather the power of a statistical test. The goal of 'presize' is to provide functions for such precision based sample size calculations. For a given sample size, the functions will return the precision (width of the confidence interval), and vice versa.
 
 - `r pkg("pwr", priority = "core")` Power calculations along the lines of Cohen (1988) `r doi("10.4324/9780203771587")` using in particular the same notations for effect sizes. Examples from the book are given.
@@ -375,8 +373,6 @@ This task view focuses on packages relevant to clinical trials. For a more compr
   
 - `r pkg("MatchIt")` is an R package that selects matched samples of the original treated and control groups with similar covariate distributions.  It can be used to match exactly on covariates, to match on propensity scores, or perform a variety of other matching procedures. The package also implements a series of recommendations offered in Ho et al. (2007) `r doi("10.1093/pan/mpl013")`.
 
-- `r pkg("nppbib")` implements a nonparametric statistical test for rank or score data from partially-balanced incomplete block-design experiments.
-    
 - `r pkg("speff2trial", priority = "core")` performs estimation and testing of the treatment effect in a 2-group randomized clinical trial with a quantitative or dichotomous endpoint.
     
 - `r pkg("ThreeGroups")` This package implements the Maximum Likelihood estimator for three-group designs proposed by Gerber et al. (2010) `r doi("10.1093/pan/mpq008")`.
