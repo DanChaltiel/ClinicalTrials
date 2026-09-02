@@ -1,7 +1,7 @@
 ---
 name: ClinicalTrials
 topic: Clinical Trial Design, Monitoring, Analysis and Reporting
-maintainer: Ya Wang, Thomas Jaki, Laura Pascasio Harris, Orla Doyle, Elias Laurin Meyer, Wilmar Igl
+maintainer: Ya Wang, Thomas Jaki, Laura Pascasio Harris, Elias Laurin Meyer, Wilmar Igl, Nan Chen
 email: ya.wang10@gilead.com
 version: 2026-09-02
 source: https://github.com/cran-task-views/ClinicalTrials/
@@ -410,3 +410,8 @@ This task view focuses on packages relevant to clinical trials in general. For a
 
 ### Links
 - [Regulatory Compliance and Validation Issues (A Guidance Document for the Use of R in Regulated Clinical Trial Environments)](https://www.R-project.org/doc/R-FDA.pdf)
+
+
+### Acknowledgments
+
+We acknowledge the former co-maintainers, Orla Doyle, for their significant contributions to the development and maintenance of this Task View. Their efforts were instrumental in building and enhancing this resource, and we are grateful for their service to the community.
